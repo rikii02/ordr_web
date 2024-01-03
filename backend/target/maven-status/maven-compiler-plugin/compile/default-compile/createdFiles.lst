@@ -1,0 +1,6 @@
+com/ordrweb/oplaces/OplacesApplication.class
+com/ordrweb/oplaces/config/WebConfig.class
+com/ordrweb/oplaces/OplaceRepository.class
+com/ordrweb/oplaces/OplaceService.class
+com/ordrweb/oplaces/Oplace.class
+com/ordrweb/oplaces/OplaceController.class
