@@ -25,7 +25,6 @@ services:
       - ME_CONFIG_MONGODB_SERVER=mongodb
     networks:
       - oplacesnetwork
-
   spring-app:
     image: test-java:v0.1
     build:
@@ -44,7 +43,7 @@ services:
       SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE: admin
       SPRING_DATA_MONGODB_PORT: 27017
     networks:
-      - oplacesnetwork
+      - oplacesnetwork    
 volumes:
   data: {}
 
