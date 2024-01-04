@@ -3,6 +3,8 @@ import '../api.dart';
 import '../models/oplace.dart';
 
 class OplacesPage extends StatefulWidget {
+  const OplacesPage({super.key});
+
   @override
   _OplacesPageState createState() => _OplacesPageState();
 }
@@ -49,7 +51,7 @@ class _OplacesPageState extends State<OplacesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Oplaces'),
+        title: const Text('Oplaces'),
       ),
       body: Center(
         child: ListView.builder(
@@ -64,7 +66,7 @@ class _OplacesPageState extends State<OplacesPage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => createOplace(),
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

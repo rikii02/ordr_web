@@ -1,4 +1,4 @@
-FROM ubutntu:22.04
+FROM ubuntu:22.04
 
 RUN apt update && apt install -y curl git unzip
 
