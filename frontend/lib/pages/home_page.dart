@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'oplaces_page.dart';
 
 class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,29 +11,28 @@ class MyHomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            color: Color(0xFFF5EEE8),
-            padding: EdgeInsets.symmetric(vertical: 16),
+            color: const Color(0xFFF5EEE8),
+            padding: const EdgeInsets.symmetric(vertical: 16),
             child: Center(
               child: Column(
                 children: [
                   Text(
                     'Ordr Software Solutions',
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
-                  SizedBox(height: 16),
+                  const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => OplacesPage(),
+                          builder: (context) => const OplacesPage(),
                         ),
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.white, // Color de fondo del botón
-                      onPrimary: Colors.brown[800],
+                      foregroundColor: Colors.brown[800], backgroundColor: Colors.white,
                     ),
-                    child: Text('Oplaces'),
+                    child: const Text('Oplaces'),
                   ),
                 ],
               ),
@@ -40,8 +41,8 @@ class MyHomePage extends StatelessWidget {
           Expanded(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.all(16),
-              child: Column(
+              padding: const EdgeInsets.all(16),
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
