@@ -43,7 +43,21 @@ services:
       SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE: admin
       SPRING_DATA_MONGODB_PORT: 27017
     networks:
-      - oplacesnetwork    
+      - oplacesnetwork  
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend/
+      dockerfile: Dockerfile
+    image: img-frontend
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    depends_on:
+      -spring-app
+    networks:
+      - oplacesnetwork
+            
 volumes:
   data: {}
 
