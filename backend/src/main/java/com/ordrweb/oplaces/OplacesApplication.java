@@ -16,14 +16,14 @@ public class OplacesApplication {
    @Bean
    CommandLineRunner runner(OplaceRepository repository) {
       return args -> {
-         String otag = "@La_pizza";
 
          Oplace oplace = new Oplace(
+            1,
             "La Pizza",
-             otag,
+            "@La_pizza",
             "Pizzeria",
-            List.of("burger", "pizza")
-         );
+            List.of("pizza", "burger")
+            );
          
          repository.insert(oplace);
       };

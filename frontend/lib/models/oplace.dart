@@ -1,4 +1,3 @@
-
 class Oplace {
   String name;
   String oTag;
@@ -15,7 +14,7 @@ class Oplace {
   factory Oplace.fromJson(Map<String, dynamic> json) {
     return Oplace(
       name: json['name'],
-      oTag: json['o_tag'],
+      oTag: json['otag'],
       description: json['description'],
       products: List<String>.from(json['products']),
     );
@@ -24,7 +23,7 @@ class Oplace {
   Map<String, dynamic> toJson() {
     return {
       'name': name,
-      'o_tag': oTag,
+      'otag': oTag,
       'description': description,
       'products': products,
     };

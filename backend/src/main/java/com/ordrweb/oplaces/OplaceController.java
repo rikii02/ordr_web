@@ -46,7 +46,7 @@ public class OplaceController {
       Oplace existingOplace = oplaceRepository.findById(id).orElse(null);
       if (existingOplace != null) {
          existingOplace.setName(updatedOplace.getName());
-         existingOplace.setO_tag(updatedOplace.getO_tag());
+         existingOplace.setOtag(updatedOplace.getOtag());
          existingOplace.setDescription(updatedOplace.getDescription());
          existingOplace.setProducts(updatedOplace.getProducts());
          oplaceRepository.save(existingOplace);

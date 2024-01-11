@@ -1,12 +1,16 @@
 package com.ordrweb.oplaces;
 
 import java.util.List;
+
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Oplace {
-   
+
+   @Id
+   public int id;
    public String name;
    @Indexed(unique = true) public String otag;
    public String description;
@@ -15,18 +19,22 @@ public class Oplace {
    public Oplace() {
    }
 
-   public Oplace(String name, String otag, String description, List<String> products) {
+   public Oplace(int id, String name, String otag, String description, List<String> products) {
+      this.id = id;
       this.name = name;
       this.otag = otag;
       this.description = description;
       this.products = products;
+   }
+   public int getId() {
+      return this.id;
    }
 
    public String getName() {
       return this.name;
    }
 
-   public String getO_tag() {
+   public String getOtag() {
       return this.otag;
    }
 
@@ -34,15 +42,11 @@ public class Oplace {
       return this.description;
    }
 
-   public List<String> getProdjucts() {
-      return this.products;
-   }
-
    public void setName(String name) {
       this.name = name;
    }
 
-   public void setO_tag(String otag) {
+   public void setOtag(String otag) {
       this.otag = otag;
    }
 

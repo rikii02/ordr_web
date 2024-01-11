@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'models/oplace.dart';
 
 class Api {
-  static const String baseUrl = 'http://localhost:8081/api/v1/oplaces';
+  static const String baseUrl = 'http://localhost:8080/api/v1/oplaces';
 
   static Future<List<Oplace>> fetchOplaces() async {
     final response = await http.get(Uri.parse(baseUrl));
