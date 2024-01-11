@@ -1,11 +1,11 @@
 import './App.css';
-import { TodoWrapper } from './components/TodoWrapper';
+import { OplaceWrapper } from './components/OplaceWrapper';
 
 function App() {
 
   return (
     <div className="App">
-      <TodoWrapper />
+      <OplaceWrapper />
     </div>
   );
 }

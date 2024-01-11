@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "axios": "^1.6.5"
+    "react-player": "^2.14.0",
+    "react-router-dom": "^6.21.0"
   }
 }
