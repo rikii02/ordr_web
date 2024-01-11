@@ -7,8 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Oplace {
-   @Id
-   public String id;
+   
    public String name;
    @Indexed(unique = true) public String otag;
    public String description;
@@ -22,10 +21,6 @@ public class Oplace {
       this.otag = otag;
       this.description = description;
       this.products = products;
-   }
-
-   public String getId() {
-      return this.id;
    }
 
    public String getName() {
@@ -62,10 +57,6 @@ public class Oplace {
 
    public List<String> getProducts() {
       return this.products;
-   }
-
-   public void setId(final String id) {
-      this.id = id;
    }
 
    public void setProducts(final List<String> products) {
