@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping({"/api/v1/oplaces"})
+@RequestMapping({"/api/v1/oplace"})
 @AllArgsConstructor
 public class OplaceController {
 
@@ -48,7 +48,6 @@ public class OplaceController {
          existingOplace.setName(updatedOplace.getName());
          existingOplace.setOtag(updatedOplace.getOtag());
          existingOplace.setDescription(updatedOplace.getDescription());
-         existingOplace.setProducts(updatedOplace.getProducts());
          oplaceRepository.save(existingOplace);
          return ResponseEntity.status(HttpStatus.OK).body(existingOplace);
       } 

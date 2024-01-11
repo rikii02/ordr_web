@@ -45,9 +45,9 @@ services:
     networks:
       - oplacesnetwork  
   frontend:
-    container_name: frontend
+    container_name: frontend2
     build:
-      context: ./frontend/
+      context: ./frontend2/
       dockerfile: Dockerfile
     image: img-frontend
     ports:

@@ -1,6 +1,6 @@
-/Users/ricard/Documents/GitHub/ordr_web/backend/src/main/java/com/ordrweb/oplaces/OplaceController.java
-/Users/ricard/Documents/GitHub/ordr_web/backend/src/main/java/com/ordrweb/oplaces/OplacesApplication.java
-/Users/ricard/Documents/GitHub/ordr_web/backend/src/main/java/com/ordrweb/oplaces/Oplace.java
-/Users/ricard/Documents/GitHub/ordr_web/backend/src/main/java/com/ordrweb/oplaces/config/WebConfig.java
-/Users/ricard/Documents/GitHub/ordr_web/backend/src/main/java/com/ordrweb/oplaces/OplaceRepository.java
-/Users/ricard/Documents/GitHub/ordr_web/backend/src/main/java/com/ordrweb/oplaces/OplaceService.java
+/Users/ricard/Documents/GitHub/ordr_web2/backend/src/main/java/com/ordrweb/oplaces/OplaceService.java
+/Users/ricard/Documents/GitHub/ordr_web2/backend/src/main/java/com/ordrweb/oplaces/config/WebConfig.java
+/Users/ricard/Documents/GitHub/ordr_web2/backend/src/main/java/com/ordrweb/oplaces/OplacesApplication.java
+/Users/ricard/Documents/GitHub/ordr_web2/backend/src/main/java/com/ordrweb/oplaces/OplaceRepository.java
+/Users/ricard/Documents/GitHub/ordr_web2/backend/src/main/java/com/ordrweb/oplaces/OplaceController.java
+/Users/ricard/Documents/GitHub/ordr_web2/backend/src/main/java/com/ordrweb/oplaces/Oplace.java
