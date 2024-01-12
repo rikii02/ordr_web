@@ -24,8 +24,11 @@
 }
 
 .bottom-section {
-  background-color: #e8dbd3;
-  padding: 20px;
+  background: #e8dbd3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 body {
@@ -49,14 +52,17 @@ h2 {
 .bottom-section {
   background-color: #e8dbd3;
   padding: 20px;
+  margin-top: 5rem;
 }
 
 .form-container {
   background: #856965;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   flex-direction: column;
+  padding: 2rem;
+  border-radius: 5px;
 } 
 
 .oplace-input,
@@ -89,18 +95,12 @@ h2 {
   background:#856965;
   text-align: center;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
- 
 }
 .OplaceWrapper {
-  margin-top: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 2rem;
   border-radius: 5px;
-  
-
 }
 
 .OplaceForm {
@@ -114,7 +114,7 @@ h2 {
   padding: 0.55rem;
   cursor: pointer;
   border-radius: 5px;
-  margin-bottom: 3rem;
+  margin-bottom: 0%;
 }
 
 .Oplace {
