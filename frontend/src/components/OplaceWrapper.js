@@ -12,7 +12,7 @@ export const OplaceWrapper = () => {
 
     const getOplaces= async () => {
         try {
-            const response = await api.get("/api/v1/oplace");
+            const response = await api.get("/api/v1/oplaces");
             console.log(response.data);
             setOplaces(response.data);
         } catch (err) {
@@ -22,8 +22,8 @@ export const OplaceWrapper = () => {
 
     const addOplace = async (name, otag, description) => {
         try {
-            await api.post("/api/v1/oplace", { name, otag, description });
-            const response = await api.get("/api/v1/oplace");
+            await api.post("/api/v1/oplaces", { name, otag, description });
+            const response = await api.get("/api/v1/oplaces");
             setOplaces(response.data);
         } catch (err) {
             console.log(err);
@@ -32,7 +32,7 @@ export const OplaceWrapper = () => {
       
     const deleteOplace = async (id) => {
         try {
-          await api.delete(`/api/v1/oplace/${id}`);
+          await api.delete(`/api/v1/oplaces/${id}`);
           setOplaces(oplaces.filter((oplace) => oplace.id !== id));
         } catch (err) {
           console.log(err);
@@ -56,7 +56,7 @@ export const OplaceWrapper = () => {
             oplace.id === id ? { ...oplace, name, otag, description, isEditing: !oplace.isEditing } : oplace
           );
           setOplaces(updatedOplaces);
-          await api.put(`/api/v1/oplace/${id}`, { name, otag, description });
+          await api.put(`/api/v1/oplaces/${id}`, { name, otag, description });
         } catch (err) {
           console.log(err);
         }
