@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: left;
+}
+.top-section {
+  background-color: #856965;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.top-section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bottom-section {
+  background-color: #e8dbd3;
+  padding: 20px;
+}
+
+body {
+  background: #e8dbd3;
+  align-items: center;
+}
+
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.bottom-section {
+  background-color: #e8dbd3;
+  padding: 20px;
+}
+
+.form-container {
+  background: #856965;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} 
+
+.oplace-input,
+.otag-input,
+.description-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.oplace-input::placeholder,
+.otag-input::placeholder,
+.description-input::placeholder {
+  color: #856965;
+}
+
+.oplace-btn {
+  background: #fff;
+  color: #856965;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+.wrapper-container {
+  background:#856965;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+.OplaceWrapper {
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  
+
+}
+
+.OplaceForm {
+  margin-bottom: 1rem;
+}
+
+.oplace-btn {
+  background: #fff;
+  color: #856965;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+
+.Oplace {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #856965;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.Oplace p.oplace-title {
+  font-weight: bold;
+}
+
+.Oplace div.oplace-description {
+  color: #555; 
+  font-size: 0.85rem;
+}
+
+.fa-icon {
+  margin-left: 0.75rem;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+

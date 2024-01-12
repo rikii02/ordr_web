@@ -1,0 +1,20 @@
+/* styles.css */
+.App {
+    text-align: left;
+  }
+  
+  .App-header {
+    background: #856965;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .App-header h1 {
+    margin-bottom: 10px;
+  }
+  
+  .App-header p {
+    font-size: 1rem;
+  }
+  
