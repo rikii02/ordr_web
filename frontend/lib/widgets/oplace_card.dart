@@ -25,24 +25,6 @@ class OplaceCard extends StatelessWidget {
               style: const TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 8),
-            Row(
-              children: oplace.products
-                  .map((product) => Container(
-                        margin: const EdgeInsets.only(right: 8),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 8, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: Text(
-                          product,
-                          style: const TextStyle(color: Colors.white),
-                        ),
-                      ))
-                  .toList(),
-            ),
-            const SizedBox(height: 8),
             Text(
               oplace.description,
               style: const TextStyle(fontSize: 16),

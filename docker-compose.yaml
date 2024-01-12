@@ -42,6 +42,11 @@ services:
       SPRING_DATA_MONGODB_PASSWORD: rootpass
       SPRING_DATA_MONGODB_AUTHENTICATION-DATABASE: admin
       SPRING_DATA_MONGODB_PORT: 27017
+      OTEL_SERVICE_NAME: spring-app
+      OTEL_TRACES_EXPORTER: jaeger
+      OTEL_METRICS_EXPORTER: none
+      OTEL_EXPORTER_JAEGER_ENDPOINT: http://jaeger:14250
+    
     networks:
       - oplacesnetwork  
   frontend:
@@ -55,6 +60,15 @@ services:
     restart: unless-stopped
     depends_on:
       - spring-app
+    networks:
+      - oplacesnetwork
+  jaeger:
+    container_name: jaeger
+    image: jaegertracing/all-in-one:latest      
+    restart: always
+    ports:
+      - "16686:16686"
+      - "14250:14250"
     networks:
       - oplacesnetwork
             

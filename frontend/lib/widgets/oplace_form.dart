@@ -4,7 +4,6 @@ class OplaceForm extends StatelessWidget {
   final TextEditingController nameController;
   final TextEditingController otagController;
   final TextEditingController descriptionController;
-  final TextEditingController productsController;
   final Function() onCreatePressed;
 
   const OplaceForm({
@@ -12,7 +11,6 @@ class OplaceForm extends StatelessWidget {
     required this.nameController,
     required this.otagController,
     required this.descriptionController,
-    required this.productsController,
     required this.onCreatePressed,
   }) : super(key: key);
 
@@ -34,10 +32,6 @@ class OplaceForm extends StatelessWidget {
             TextField(
               controller: descriptionController,
               decoration: InputDecoration(labelText: 'Descripción'),
-            ),
-            TextField(
-              controller: productsController,
-              decoration: InputDecoration(labelText: 'Productos (separados por comas)'),
             ),
           ],
         ),
