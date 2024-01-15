@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping({"/api/v1/oplaces"})
 @AllArgsConstructor
+@CrossOrigin(origins = "*")
 public class OplaceController {
 
    @Autowired
